@@ -20,15 +20,15 @@ Compilers: GNU | Intel | Clang | AppleClang
 
 ### Installing
 
-1. Download G2 Code from GitHub
+# Download G2 Code from GitHub
 git clone -b g2_v3.2.0 https://github.com/NOAA-EMC/NCEPLIBS-g2.git
 cd NCEPLIBS-g2
 
-2. Create a directory where to build G2 library
+# Create a directory where to build G2 library
 mkdir build
 cd build
 
-3. Load the following modules 
+# Load the following modules 
 module purge
 module load intel/18.0.5.274                  
 module load impi/2018.0.4
@@ -45,7 +45,7 @@ export CC=icc
 export CXX=icpc
 export FC=ifort
 
-4. Run cmake
+# Run cmake
 cmake .. -DCMAKE_INSTALL_PREFIX=path_to_install -DCMAKE_PREFIX_PATH="${PNG_LIBDIR};${PNG_INC};${JASPER_LIBDIR};${JASPER_INC}"
 make 
 
