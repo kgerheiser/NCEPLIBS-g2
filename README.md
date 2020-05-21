@@ -39,7 +39,7 @@ module load libpng/1.2.44  zlib/1.2.11
 If the chosen compiler is not the default compiler on the system,
 set the environment variables: export CC=..., export CXX=..., 
 export FC=..., before invoking cmake.
-Note that Windows systems and other compilers (e.g. PGI) are not supported at this time.
+Note that Windows systems is not supported at this time.
 
 export CC=icc
 export CXX=icpc
