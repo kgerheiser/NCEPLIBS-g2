@@ -1,9 +1,9 @@
-## NCEPLIBS G2 Library
+### NCEPLIBS G2 Library
 
 Utilities for coding/decoding GRIB2 messages. This library
 contains Fortran 90 decoder/encoder routines for GRIB edition 2,
 as well as indexing/searching utility routines. 
-For more detailed documentation see (grib2.doc)
+For more detailed documentation see (grib2.doc).
 
 Code Manager : Boi Vuong
 
@@ -59,7 +59,7 @@ export CXX=icpc
 export FC=ifort
 
 #### Run cmake
-cmake .. -DCMAKE_INSTALL_PREFIX=path_to_install \ 
+cmake .. -DCMAKE_INSTALL_PREFIX=path_to_install  \ 
 -DCMAKE_PREFIX_PATH="${PNG_LIBDIR};${PNG_INC};${JASPER_LIBDIR};${JASPER_INC}"
 
 make 
