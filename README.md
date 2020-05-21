@@ -7,11 +7,10 @@ For more detailed documentation see (grib2.doc)
 
 Code Manager : Boi Vuong
 
-How to build and install G2 library
-===================================
+# How to build and install G2 library
+=====================================
 
-Installation using CMake
-------------------------
+### Installation using CMake
 CMake version 3.12 or newer. 
 This is the recommended method of installation.
 
