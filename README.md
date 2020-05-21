@@ -19,51 +19,41 @@ This is the recommended method of installation.
 Compilers: GNU | Intel | Clang | AppleClang 
 
 #### Installing
-
-#### Download G2 Code from GitHub
-
+```
+Download G2 Code from GitHub.com
 git clone -b g2_v3.2.0 https://github.com/NOAA-EMC/NCEPLIBS-g2.git
-
 cd NCEPLIBS-g2
-
+```
 #### Create a directory where to build G2 library
-
+```
 mkdir build
-
 cd build
-
+```
 #### Load the following modules 
-
+```
 module purge
-
 module load intel/18.0.5.274
-
 module load impi/2018.0.4
-
 module load cmake/3.16.3
-
 module load jasper/1.900.1
-
-module load libpng/1.2.44  zlib/1.2.11
-
+module load libpng/1.2.44
+module load zlib/1.2.11
+```
 If the chosen compiler is not the default compiler on the system,
 set the environment variables: export CC=..., export CXX=..., 
 export FC=..., before invoking cmake.
-
+```
 Note: Windows systems is not supported at this time.
-
 export CC=icc
-
 export CXX=icpc
-
 export FC=ifort
-
+```
 #### Run cmake
+```
 cmake .. -DCMAKE_INSTALL_PREFIX=path_to_install  \ 
 -DCMAKE_PREFIX_PATH="${PNG_LIBDIR};${PNG_INC};${JASPER_LIBDIR};${JASPER_INC}"
-
 make 
-
+```
 If -DCMAKE_INSTALL_PREFIX= is omitted, the libraries will be installed in directory install underneath the build directory.
 
 #### Version
