@@ -52,11 +52,11 @@ export FC=ifort
 cmake .. -DCMAKE_INSTALL_PREFIX=path_to_install  \ 
 -DCMAKE_PREFIX_PATH="${PNG_LIBDIR};${PNG_INC};${JASPER_LIBDIR};${JASPER_INC}"
 make 
-If -DCMAKE_INSTALL_PREFIX= is omitted, the libraries will be installed in directory install underneath the build directory.
+If -DCMAKE_INSTALL_PREFIX= is omitted, the libraries will be installed in directory 
+install underneath the build directory.
 ```
 #### Version
 3.2.0
 
 #### Authors
-
 * **[NCEP/EMC](mailto:NCEP.List.EMC.nceplibs.Developers@noaa.gov)**
