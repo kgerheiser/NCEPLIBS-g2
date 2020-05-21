@@ -37,7 +37,7 @@ module load cmake/3.16.3
 module load jasper/1.900.1
 module load libpng/1.2.44  zlib/1.2.11
 
-### If the chosen compiler is not the default compiler on the system,
+If the chosen compiler is not the default compiler on the system,
 set the environment variables: export CC=..., export CXX=..., 
 export FC=..., before invoking cmake.
 Note that Windows systems and other compilers (e.g. PGI) are not supported at this time.
