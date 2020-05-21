@@ -38,11 +38,10 @@ module load cmake/3.16.3
 module load jasper/1.900.1
 module load libpng/1.2.44
 module load zlib/1.2.11
-```
+
 If the chosen compiler is not the default compiler on the system,
 set the environment variables: export CC=..., export CXX=..., 
 export FC=..., before invoking cmake.
-```
 Note: Windows systems is not supported at this time.
 export CC=icc
 export CXX=icpc
@@ -53,9 +52,8 @@ export FC=ifort
 cmake .. -DCMAKE_INSTALL_PREFIX=path_to_install  \ 
 -DCMAKE_PREFIX_PATH="${PNG_LIBDIR};${PNG_INC};${JASPER_LIBDIR};${JASPER_INC}"
 make 
-```
 If -DCMAKE_INSTALL_PREFIX= is omitted, the libraries will be installed in directory install underneath the build directory.
-
+```
 #### Version
 3.2.0
 
