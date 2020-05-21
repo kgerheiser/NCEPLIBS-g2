@@ -9,6 +9,7 @@ How to build and install G2 library
 
 Installation using CMake
 ------------------------
+CMake version 3.12 or newer. 
 This is the recommended method of installation.
 
 ### Prerequisites
@@ -18,12 +19,10 @@ Compilers: GNU | Intel | Clang | AppleClang
 ### Installing
 
 1. Download G2 Code from GitHub
-git clone https://github.com/NOAA-EMC/NCEPLIBS-g2.git
+git clone -b g2_v3.2.0 g2_v3.2.0 https://github.com/NOAA-EMC/NCEPLIBS-g2.git
 cd NCEPLIBS-g2
-git  checkout   g2_v3.2.0
 
-2. Create a directory where to buiild G2 library
-
+2. Create a directory where to build G2 library
 mkdir build
 cd build
 
@@ -35,15 +34,20 @@ module load cmake/3.16.3
 module load jasper/1.900.1
 module load libpng/1.2.44  zlib/1.2.11
 
+### If the chosen compiler is not the default compiler on the system,
+set the environment variables: export CC=..., export CXX=..., 
+export FC=..., before invoking cmake.
+Note that Windows systems and other compilers (e.g. PGI) are not supported at this time.
+
 export CC=icc
 export CXX=icpc
 export FC=ifort
 
 4. Run cmake
-cmake .. -DCMAKE_INSTALL_PREFIX=path_to_install   -DCMAKE_PREFIX_PATH="${PNG_LIBDIR};${PNG_INC};${JASPER_LIBDIR};${JASPER_INC}
-
+cmake .. -DCMAKE_INSTALL_PREFIX=path_to_install -DCMAKE_PREFIX_PATH="${PNG_LIBDIR};${PNG_INC};${JASPER_LIBDIR};${JASPER_INC}
 make 
-make install
+
+If -DCMAKE_INSTALL_PREFIX= is omitted, the libraries will be installed in directory install underneath the build directory.
 
 ### Authors
 
