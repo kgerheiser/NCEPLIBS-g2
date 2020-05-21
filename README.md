@@ -1,6 +1,9 @@
 # NCEPLIBS G2 Library
 
-Utilities for coding/decoding GRIB2 messages. For more detailed documentation see [here](grib2.doc)
+Utilities for coding/decoding GRIB2 messages. This library
+contains Fortran 90 decoder/encoder routines for GRIB edition 2,
+as well as indexing/searching utility routines. 
+For more detailed documentation see (grib2.doc)
 
 Code Manager : Boi Vuong
 
@@ -49,6 +52,9 @@ make
 
 If -DCMAKE_INSTALL_PREFIX= is omitted, the libraries will be installed in directory install underneath the build directory.
 
+### Version
+3.2.0
+
 ### Authors
 
-**[NCEP/EMC](mailto:NCEP.List.EMC.nceplibs.Developers@noaa.gov)** 
+* **[NCEP/EMC](mailto:NCEP.List.EMC.nceplibs.Developers@noaa.gov)**
