@@ -22,9 +22,7 @@ Compilers: GNU | Intel | Clang | AppleClang
 ### Installing
 
 1. Download G2 Code from GitHub
-
 git clone -b g2_v3.2.0 https://github.com/NOAA-EMC/NCEPLIBS-g2.git
-
 cd NCEPLIBS-g2
 
 2. Create a directory where to build G2 library
